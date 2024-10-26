@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kooda APK Download</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const link = document.createElement("a");
+        link.href = "./kooda.apk"; // e.g., "files/sample.pdf"
+        link.download = "kooda.apk"; // Optional: rename the file on download
+        link.style.display = "none"; // Hide the link
+        document.body.appendChild(link);
+        link.click(); // Trigger the download
+        document.body.removeChild(link); // Remove the link after clicking
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Thank You for Download our App</h1>
+    <p>Your file should download automatically.</p>
+    <p>
+      If it doesn't,
+      <a id="manualDownloadLink" href="./kooda.apk" download="kooda.apk"
+        >click here to download.</a
+      >
+    </p>
+  </body>
+</html>
