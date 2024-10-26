@@ -14,7 +14,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const link = document.createElement("a");
-        link.href = "./kooda.apk"; // e.g., "files/sample.pdf"
+        link.href = "./public/kooda.apk"; // e.g., "files/sample.pdf"
         link.download = "kooda.apk"; // Optional: rename the file on download
         link.style.display = "none"; // Hide the link
         document.body.appendChild(link);
@@ -28,7 +28,7 @@
     <p>Your file should download automatically.</p>
     <p>
       If it doesn't,
-      <a id="manualDownloadLink" href="./kooda.apk" download="kooda.apk"
+      <a id="manualDownloadLink" href="./public/kooda.apk" download="kooda.apk"
         >click here to download.</a
       >
     </p>
